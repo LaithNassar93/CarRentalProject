@@ -39,15 +39,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .roles("EMPLOYEE");
     }
 
-    /**
-     * Enables basic HTTP authorization, disables CSRF.
-     * Any route with the wildcard /admin/** can only be accessed by an authorized user with the role ADMIN.
-     * Any route with the wildcard /employee/** can only be accessed by an authorized user with the role EMPLOYEE.
-     * All other routes are public.
-     *
-     * @param http HttpSecurity object used for configurtaion
-     * @throws Exception
-     */
+
     @Override
     protected void configure(final HttpSecurity http) throws Exception {
         http.

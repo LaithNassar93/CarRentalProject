@@ -2,16 +2,16 @@
     <div class="list-group list-group-flush">
         <div class="sidebar-heading"><strong>Menu</strong></div>
         <a class="list-group-item list-group-item-action bg-light" href="/">
-            Explore
+            Search
         </a>
         <div th:if="${#request.isUserInRole('EMPLOYEE')}">
             <a class="list-group-item list-group-item-action bg-light"
                href="/employee/create-rental">
-                Create rental
+                Rent a Car
             </a>
             <a class="list-group-item list-group-item-action bg-light"
                href="/employee/running-rentals">
-                Running rentals
+                Active rentals
             </a>
         </div>
     </div>
